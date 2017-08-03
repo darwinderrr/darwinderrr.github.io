@@ -63,8 +63,8 @@ if(file_exists("log.html") && filesize("log.html") > 0){
 ?></div>
      
     <form name="message" action="">
-        <input name="usermsg" type="text" id="usermsg" size="63" />
-        <input name="submitmsg" type="submit"  id="submitmsg" value="Send" />
+	    <textarea name="usermsg" type="text" id="usermsg" style="font-size:20px" rows="4"></textarea>
+        <input name="submitmsg" type="submit"  id="submitmsg" value="Send" style="font-size:20px;" />
     </form>
 </div>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
