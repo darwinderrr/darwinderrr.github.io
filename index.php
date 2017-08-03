@@ -98,7 +98,7 @@ $(document).ready(function(){
 		  	},
 		});
 	}
-  setInterval (loadLog, 2500);
+  setInterval (loadLog, 500);
 });
 </script>
 <?php
