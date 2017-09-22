@@ -1,6 +1,28 @@
+
 body {
-  display: flex;
-  width: 100vw;
-  height: 100vh;
   font-family: 'Roboto', sans-serif;
+  display: flex;
+  max-height: 100vh;
+  overflow:hidden;
+  flex-direction: column;
 }
+
+main {
+	display:flex; height:100vh; justify-content:center; text-align:center; align-items:center; width:100vw; float:left;
+}
+
+.push-out-top{position:relative;-webkit-animation:animatepush-out-top 1s;animation:animatepush-out-top 1s}
+@-webkit-keyframes animatepush-out-top{from{top:0px;opacity: 1} to{top:-50px;opacity: 0}}
+@keyframes animatepush-out-top{from{top:0px;opacity: 1} to{top:-50px;opacity: 0}}
+
+.push-in-bottom{position:relative;-webkit-animation:animatepush-in-bottom 1s;animation:animatepush-in-bottom 1s}
+@-webkit-keyframes animatepush-in-bottom{from{bottom:-50px;opacity: 0} to{bottom:0px;opacity: 1}}
+@keyframes animatepush-in-bottom{from{bottom:-50px;opacity: 0} to{bottom:0px;opacity: 1}}
+
+.push-out-bottom{position:relative;-webkit-animation:animatepush-out-bottom 1s;animation:animatepush-out-bottom 1s}
+@-webkit-keyframes animatepush-out-bottom{from{bottom:0px;opacity: 1} to{bottom:-50px;opacity: 0}}
+@keyframes animatepush-out-bottom{from{bottom:0px;opacity: 1} to{bottom:-50px;opacity: 0}}
+
+.push-in-top{position:relative;-webkit-animation:animatepush-in-top 1s;animation:animatepush-in-top 1s}
+@-webkit-keyframes animatepush-in-top{from{top:-50px;opacity: 0} to{top:0px;opacity: 1}}
+@keyframes animatepush-in-top{from{top:-50px;opacity: 0} to{top:0px;opacity: 1}}
