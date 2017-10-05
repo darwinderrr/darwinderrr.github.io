@@ -13,25 +13,18 @@
 		<link rel="stylesheet" href="/css/main.css">
     </head>
     <body>
-    	<main>
-    		<div class="row">
-        		<div class="col s12" style="vertical-align:bottom;text-align:center;float:left;width:100vw"><img id="dp_logo" src="/img/dp_logo.png" height="100%"/></div>
-        		<div class="o_main">
-        			<div class="col s12 o1" style="vertical-align:middle;text-align:center;float:left;height:40px"><div style="letter-spacing:2.5px">darwinpensotes</div></div>
-        			<div class="col s12 o2 hide" style="vertical-align:middle;text-align:center;float:left;;height:40px"><div style="letter-spacing:2.5px"><a href="https://twitter.com/darwinderrr" target="_blank"><i class="fa fa-twitter-square"></i></a> | <a href="https://fb.com/darwinderrr" target="_blank"><i class="fa fa-facebook-square"></i></a> | <a href="https://github.com/darwinderrr" target="_blank"><i class="fa fa-github-square"></i></a></div></div>
-        		</div>
-        	</div>
-        </main>
-		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    	<nav>
+    		<div class="nav-wrapper">
+      			<a href="#" class="brand-logo"><img src="/img/dp_logo.png"/></a>
+      			<ul id="nav-mobile" class="right hide-on-med-and-down">
+        			<li><a href="sass.html">Home</a></li>
+        			<li><a href="badges.html">Products</a></li>
+        			<li><a href="collapsible.html">About</a></li>
+      			</ul>
+    		</div>
+  	</nav>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
         <script src="https://use.fontawesome.com/af24b3ed06.js"></script>
-        <script>
-        	$("#dp_logo").click(function() {
-        			$(".o1").addClass("push-out-top");
-        			setTimeout('$(".o1").addClass("hide");$(".o1").removeClass("push-out-top");$(".o2").addClass("push-in-bottom");$(".o2").removeClass("hide");',1000);
-        			setTimeout('$(".o2").removeClass("push-in-bottom");',2000);
-        			ishovered=1;
-        	});
-        </script>
     </body>
 </html>
