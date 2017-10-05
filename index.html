@@ -39,7 +39,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
         <script src="https://use.fontawesome.com/af24b3ed06.js"></script>
 	<script>
-		$('.carousel.carousel-slider').carousel({fullWidth: true});
+		$('.carousel.carousel-slider').carousel({fullWidth: true;indicators:false;});
+		setInterval(function(){$('.carousel').carousel('next');},5000);
 	</script>
     </body>
 </html>
