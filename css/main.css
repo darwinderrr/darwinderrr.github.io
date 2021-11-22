@@ -81,7 +81,7 @@ div.nav > nav ul li a:hover, footer a:hover {
 }
 
 div.content {
-  flex: 0 0 calc(100vw - 300px);
+  flex: 0 0 calc(100vw - 400px);
   display: flex;
   flex-direction: column;
   justify-content: center;
