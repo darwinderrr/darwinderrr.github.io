@@ -21,17 +21,19 @@ body {
 
 div.nav {
   display: flex;
-  flex: 0 0 200px;
+  flex: 0 0 300px;
   align-items: center;
 }
 
 div.nav > nav {
   padding: 10px 40px 10px 10px;
   border-right: 5px solid var(--font-color);
+  width: 100%;
 }
 
 div.nav > nav ul li {
   list-style: none;
+  line-height: 50px;
 }
 div.nav > nav ul li a {
   text-decoration: none;
@@ -47,12 +49,21 @@ nav ul li a.active{
   font-weight: bold;
 }
 
-div.nav > nav ul li a:hover, div.nav > nav ul li a.active{
+nav ul li a.active:before, div.nav > nav ul li a:hover:before{
+  content: "> ";
+  font-weight: bold;
+}
+
+div.nav > nav ul li a.active {
   color: white;
 }
 
+div.nav > nav ul li a:hover, footer a:hover {
+   color: #0f1a11;
+}
+
 div.content {
-  flex: 0 0 calc(100vw - 200px);
+  flex: 0 0 calc(100vw - 300px);
   display: flex;
   flex-direction: column;
   justify-content: center;
