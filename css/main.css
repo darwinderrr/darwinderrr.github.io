@@ -70,6 +70,11 @@ div.nav.active > nav ul li a.active:before, div.nav > nav ul li a:hover:before {
   div.nav > nav ul  li a:before {
     left: 50px;
   }
+
+  div.content {
+    flex: 0 0 calc(100vw - 400px);
+    padding: 10px 40px 10px 40px;
+  }
 }
 
 div.nav > nav {
@@ -123,11 +128,9 @@ div.nav > nav ul li a:hover, footer a:hover, .nav-toggle.active {
 }
 
 div.content {
-  flex: 0 0 calc(100vw - 400px);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 10px 40px 10px 40px;
 }
 
 div.content h1 {
