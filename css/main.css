@@ -7,8 +7,8 @@
 main {
   font-family: 'Work Sans', sans-serif !important;
   display: flex;
-  height: calc(100vh - 40px); 
-  max-height: calc(100vh - 40px);
+  height: calc(100vh - 80px); 
+  max-height: calc(100vh - 80px);
   overflow:hidden;
   flex-direction: row;
 }
@@ -16,7 +16,7 @@ main {
 body {
   background-color: var(--background-color);
   padding: 0;
-  margin: 0;
+  margin: 20px;
 }
 
 div.nav {
@@ -26,7 +26,7 @@ div.nav {
 }
 
 div.nav > nav {
-  padding: 10px 40px 10px 0;
+  padding: 10px 40px 10px 10px;
   border-right: 5px solid var(--font-color);
 }
 
@@ -43,15 +43,20 @@ div.nav > nav ul li a, footer a {
   color: var(--font-color);
 }
 
+nav ul li a.active{
+  font-weight: bold;
+}
+
 div.nav > nav ul li a:hover, div.nav > nav ul li a.active{
   color: white;
 }
 
 div.content {
-  flex: 1 0 calc(100vw - 200px);
+  flex: 0 0 calc(100vw - 200px);
   display: flex;
-  align-items: center;
-  padding: 10px 0 10px 40px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 40px 10px 40px;
 }
 
 div.content h1 {
@@ -74,4 +79,23 @@ footer {
   text-align: center;
   font-size: 24px;
   vertical-align: middle;
+}
+
+div.hello {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+div.hello div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10px;
+}
+
+div.hello div>p {
+  padding-left: 7.5px;
+  font-size: 20px;
+  line-height: 18px;
 }
