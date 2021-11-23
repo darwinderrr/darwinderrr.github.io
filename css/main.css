@@ -102,11 +102,12 @@ nav ul li a.active{
 }
 
 div.nav > nav ul li a:before {
-  content: "> ";
+  content: "\f0da";
   font-weight: bold;
   position: absolute;
   opacity: 0;
   transition: left .5s cubic-bezier(0.075, 0.82, 0.165, 1), opacity .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  font-family: 'Font Awesome 6 Free';
 }
 
 div.nav > nav ul li a.active {
