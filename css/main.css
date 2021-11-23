@@ -95,10 +95,11 @@ div.nav > nav ul li a {
 
 div.nav > nav ul li a, footer a {
   color: var(--font-color);
+  font-weight: 500;
 }
 
 nav ul li a.active{
-  font-weight: bold;
+  font-weight: bold !important;
 }
 
 div.nav > nav ul li a:before {
@@ -117,7 +118,6 @@ div.nav > nav ul li a.active {
 
 div.nav > nav ul li a:hover {
   margin-left: 30px;
-  font-weight: 500;
 }
 
 div.nav > nav ul li a.active:hover {
